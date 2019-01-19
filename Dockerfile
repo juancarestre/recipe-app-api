@@ -13,6 +13,5 @@ WORKDIR /app
 COPY ./app /app
 
 RUN pipenv install --system --deploy --ignore-pipfile
-CMD ["pipenv", "run", "pip", "freeze"]
 RUN adduser -D user
 USER user
